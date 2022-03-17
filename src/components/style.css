@@ -91,6 +91,10 @@ span{
         padding: 1rem 0.8rem;
     }
     
+    .cards{
+        width:100%;
+    }
+    
     .search{
         width: 100%;
     }
