@@ -78,17 +78,17 @@ span{
 
 @media only screen and (max-width: 680px){
     nav{
-        padding: 1rem 0.8rem;
+        padding: 1rem;
     }
     
     .input{
-        padding: 1rem 0.8rem;
+        padding: 1rem;
         flex-direction: column;
         gap: 15px;
     }
 
     .card{
-        padding: 1rem 0.8rem;
+        padding: 1rem;
     }
     
     .cards{
