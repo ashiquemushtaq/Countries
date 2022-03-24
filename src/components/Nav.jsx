@@ -6,7 +6,7 @@ function Nav(){
     return(
         <nav>
             <h3>Where in the world?</h3>
-            <button><FaMoon/> Dark Mode</button>
+            <button className="btn-nav"><FaMoon/> Dark Mode</button>
         </nav>
     )
 }

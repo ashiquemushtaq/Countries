@@ -7,11 +7,15 @@ nav{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 
-button{
+.btn-nav{
     background-color: white;
     outline: none;
     border: none;
     font-weight: 300;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 .input{
@@ -20,7 +24,7 @@ button{
     justify-content: space-between;
 }
 
-.search{
+#search{
     padding: 0.8rem;
     border-radius: 6px;
     border: none;
@@ -76,8 +80,10 @@ span{
     font-weight: 100;
 }
 
+
+
 @media only screen and (max-width: 680px){
-    nav{
+    .nav{
         padding: 1rem;
     }
     
@@ -92,9 +98,9 @@ span{
     }
     
     .cards{
-        width:80%;
+        width: 80%;
     }
-    
+
     .search{
         width: 100%;
     }
