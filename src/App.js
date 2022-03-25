@@ -15,6 +15,33 @@ function App() {
     setCountry(await response.json());
   }
 
+  //search function and filter function
+  window.addEventListener('DOMContentLoaded',()=>{
+    const search = document.getElementById("search");
+    const region = document.getElementById("region")
+    search.addEventListener('input',(term)=>{
+    searchCountry(term.target.value);
+  })
+    region.addEventListener('change',(val)=>{
+      filterByRegion(val.target.value);
+    })
+  })
+  
+
+  const searchCountry = async term =>{
+    if(term.length<3 || term==='')return
+    const res = await fetch(`https://restcountries.com/v3.1/name/${term}`)
+    const data = await res.json()
+    await setCountry(data)
+  }
+
+  const filterByRegion = async val =>{
+    if(val==='')return
+    const res = await fetch(`https://restcountries.com/v3.1/region/${val}`)
+    const data = await res.json()
+    await setCountry(data)
+  }
+
   useEffect(()=>{
     getData();
   }, [])
